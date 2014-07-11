@@ -45,10 +45,10 @@ or download the css on github and include in your project.
  * Use to vertically center text against an image.
  *
  *  <div class="flag">
- *      <div class="flag__image">
+ *      <div class="flag--img">
  *          <img src="" alt="">
  *      </div>
- *      <div class="flag__body">
+ *      <div class="flag--bd">
  *          <p></p>
  *      </div>
  *  </div>
@@ -60,8 +60,8 @@ or download the css on github and include in your project.
     width: 100%;
 }
 
-.flag__image,
-.flag__body {
+.flag--img,
+.flag--bd {
     display: table-cell;
     vertical-align: middle;
 
@@ -75,7 +75,7 @@ or download the css on github and include in your project.
 
 }
 
-.flag__image {
+.flag--img {
     padding-right: 10px;
 
     > img {
@@ -90,7 +90,7 @@ or download the css on github and include in your project.
 
 }
 
-.flag__body {
+.flag--body {
     width: 100%;
 }
 
