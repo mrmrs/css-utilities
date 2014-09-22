@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-utilities)
 ## File Size
 
 1.3K utilities.css
-398B utilities.min.css
+398B utilities.min.css 
+194B minified and gzipped
 
 ## The Code
 ```
