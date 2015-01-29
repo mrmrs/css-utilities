@@ -25,81 +25,30 @@ View on [npm](https://www.npmjs.org/package/css-utilities)
 
 ## The Code
 ```
- *  http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
- *
- *  <div class="media attribution">
- *
- *    <a href="http://twitter.com/stubbornella" class="img">
- *      <img src="http://stubbornella.com/profile_image.jpg" alt="me" />
- *    </a>
- *
- *    <div class="bd">
- *      @Stubbornella 14 minutes ago
- *    </div>
- *
- *   </div>
- */
-
-
-
 /*
- * The Flag Object
- * Built by @csswizzrdry
- * http://csswizardry.com/2013/05/the-flag-object/
- *
- *
- * Use to vertically center text against an image.
- *
- *  <div class="flag">
- *      <div class="flag--img">
- *          <img src="" alt="">
- *      </div>
- *      <div class="flag--bd">
- *          <p></p>
- *      </div>
- *  </div>
- *
- */
+   UTILITIES
+*/
 
-.flag {
-    display: table;
+.aspect-ratio {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.aspect-ratio--object {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 100%;
+    z-index: 100;
 }
 
-.flag--img,
-.flag--bd {
-    display: table-cell;
-    vertical-align: middle;
-
-    .flag--top & {
-        vertical-align: top;
-    }
-
-    .flag--bottom & {
-        vertical-align: bottom;
-    }
-
+.overflow-container {
+  overflow-y: scroll;
 }
-
-.flag--img {
-    padding-right: 10px;
-
-    > img {
-        display: block;
-        max-width: none;
-    }
-
-    .flag--rev & {
-        padding-right: 0;
-        padding-left: 10px;
-    }
-
-}
-
-.flag--body {
-    width: 100%;
-}
-
 ```
 
 ## Author
