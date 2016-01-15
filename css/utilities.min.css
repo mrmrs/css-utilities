@@ -1,1 +1,33 @@
-.flag{display:table;width:100%}.flag__image,.flag__body{display:table-cell;vertical-align:middle}.flag--top .flag__image,.flag--top .flag__body{vertical-align:top}.flag--bottom .flag__image,.flag--bottom .flag__body{vertical-align:bottom}.flag__image{padding-right:10px}.flag__image>img{display:block;max-width:none}.flag--rev .flag__image{padding-right:0;padding-left:10px}.flag__body{width:100%}
+/*
+   UTILITIES
+*/
+/*
+
+   UTILITIES
+
+*/
+
+.aspect-ratio {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.aspect-ratio--object {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.overflow-container {
+  overflow-y: scroll;
+}
+
+
+
+
