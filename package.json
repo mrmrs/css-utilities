@@ -1,7 +1,7 @@
 {
   "name": "css-utilities",
   "style": "utilities.css",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "homepage": "http://github.com/mrmrs/css-utilities",
   "description": "Css module of single purpose classes for utilities",
   "keywords": [
