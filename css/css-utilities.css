@@ -1,15 +1,12 @@
+/*
+   UTILITIES
+*/
+/*
 
-  Postprocess tachyons stylesheets
+   UTILITIES
 
-  Usage
-    $ tachyons <input.css>
+*/
+.aspect-ratio { height: 0; padding-top: 56.25%; position: relative; }
+.aspect-ratio--object { bottom: 0; height: 100%; left: 0; position: absolute; right: 0; top: 0; width: 100%; z-index: 100; }
+.overflow-container { overflow-y: scroll; }
 
-  Options
-    -m, --minify Minify the output stylesheet
-    --generate-docs Generate documentation for a given module
-    --package The path to the module package to be documented
-
-  Example
-    $ tachyons src/tachyons.css > dist/c.css
-    $ tachyons src/tachyons.css > dist/c.css --minify
-    $ tachyons src/tachyons-type-scale.css --generate-docs --package=./package.json > readme.md
