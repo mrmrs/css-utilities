@@ -1,38 +1,44 @@
 {
   "name": "css-utilities",
-  "style": "utilities.css",
-  "version": "2.0.5",
-  "homepage": "http://github.com/mrmrs/css-utilities",
-  "description": "Css module of single purpose classes for utilities",
+  "version": "3.0.0",
+  "description": "Functional CSS for utilities",
+  "style": "dist/utilities.css",
+  "main": "dist/utilities.css",
+  "exports": {
+    ".": "./dist/utilities.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "utilities"
+    "utilities",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-utilities": {
+  "homepage": "https://github.com/mrmrs/css-utilities",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-utilities.git"
+    "url": "https://github.com/mrmrs/css-utilities.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-utilities/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-utilities/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
